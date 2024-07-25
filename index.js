@@ -13,7 +13,7 @@ let currentTime = 0;
 let intervalId;
 
 function initTimer() {
-  TotalTime = parseInt(TotalTimeInput.value) * 60;
+  TotalTime = parseFloat(TotalTimeInput.value) * 60;
   progressBar.setAttribute("max", TotalTime);
   currentTotalTime.textContent = TotalTime - currentTime;
 }
